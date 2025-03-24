@@ -1,6 +1,10 @@
 name: CI
-on: [push, pull_request]
-
+on:
+  # 支持手动触发
+  workflow_dispatch: 
+  push:
+  pull_request:
+  
 env:
   APK: sersor_mod_lsposed-0.1.0-a5-debug.apk
 
